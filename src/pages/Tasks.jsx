@@ -1,5 +1,6 @@
 import { useState } from "react";
-import Modal from "../components/ui/Modal";
+
+import AddTaskModal from "../components/tasks/AddTaskModal";
 
 const Tasks = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +9,7 @@ const Tasks = () => {
       <button onClick={() => setIsOpen(!isOpen)} className="btn btn-primary">
         Add Task
       </button>
-      <Modal isOpen={isOpen} setIsOpen={setIsOpen}></Modal>
+      <AddTaskModal isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>
   );
 };
