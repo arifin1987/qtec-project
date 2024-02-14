@@ -1,11 +1,14 @@
 import { useForm } from "react-hook-form";
 import Modal from "../ui/Modal";
+import { useDispatch } from "react-redux";
+import { addTask } from "../../redux/features/tasks/tasksSlice";
 
 // eslint-disable-next-line react/prop-types
 const AddTaskModal = ({ isOpen, setIsOpen }) => {
   const { register, handleSubmit, reset } = useForm();
+  const dispatch = useDispatch();
   const onSubmit = (data) => {
-    console.log(data);
+    dispatch(addTask(data));
     onCancel();
   };
 
