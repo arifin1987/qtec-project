@@ -33,14 +33,14 @@ const AddTaskModal = ({ isOpen, setIsOpen }) => {
           </div>
           <div className="flex flex-col mb-5">
             <label htmlFor="title" className="mb-2">
-              Description
+              Task Details
             </label>
-            <input
+            <textarea
               className="w-full rounded-md"
               type="text"
               id="description"
               {...register("description")}
-            />
+            ></textarea>
           </div>
           <div className="flex flex-col mb-5">
             <label htmlFor="title" className="mb-2">
