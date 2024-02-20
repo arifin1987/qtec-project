@@ -18,7 +18,7 @@ const Tasks = () => {
         Add Task
       </button>
       <AddTaskModal isOpen={isOpen} setIsOpen={setIsOpen} />
-      <div className="flex  justify-between p-8 ">
+      <div className="flex  justify-between p-8  ">
         <div className="grid grid-cols-3 gap-8 mt-12">
           <div>
             <h1 className="bg-purple-600 p-4 rounded-md mb-2 font-bold">
