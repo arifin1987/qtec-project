@@ -21,7 +21,19 @@ const TaskCard = ({ task }) => {
   }
   return (
     <div className="bg-purple-300 rounded-md p-8 mb-4">
-      <h1 className="text-2xl mb-4">{title}</h1>
+      <h1
+        className={`text-2xl mb-4 ${
+          task.priority === "high" ? "text-red-700" : ""
+        }
+      ${task.priority === "medium" ? "text-yellow-700" : ""}
+      ${task.priority === "low" ? "text-green-700" : ""}
+      
+      
+      
+      `}
+      >
+        {title}
+      </h1>
       <p>{description}</p>
       <p>{assignedTo}</p>
       <p>{date}</p>
