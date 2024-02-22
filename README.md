@@ -4,3 +4,4 @@
 ** there are three stages of the assigned task
 ** task title can be change based on priority
 *** there is a my task section where task can be added and can see task details
+*** redux tool-kit used here for different state management activities
